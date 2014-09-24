@@ -5,7 +5,7 @@ python:
 install: 
   - "pip install -r requirements.txt"
 before_script: 
-  - "flake8 --ignore=F403,E501 app tests"
+  - "flake8 --ignore=W292,E501 app tests"
 # command to run tests
 script: 
   - coverage run tests/features/steps.py
